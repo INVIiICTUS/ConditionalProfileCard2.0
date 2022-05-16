@@ -14,7 +14,6 @@ import "../style/index.css";
         github: null,
         linkedin: null,
         instagram: null,
-
         name: null,
         lastname: null,
         role: null,
@@ -29,18 +28,52 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
+  // Name and Last name
+  if (variables.name == null) variables.name = "Nombre";
+  if (variables.lastname == null) variables.lastname = "Apellido";
+
+  //Social Media links
+  //Twitter
+  if (variables.twitter != null) variables.twitter;
+  //Github
+  if (variables.github != null) variables.github;
+  //Linkedin
+  if (variables.linkedin != null) variables.linkedin;
+  //IG
+  if (variables.instagram != null) variables.instagram;
+
+  // Role
+  let userRole = "<h2>Puesto</h2>";
+  if (variables.role == "Floor Planner") userRole = "<h2>Floor Planner</h2>";
+  else if (variables.role == "Technical Writter")
+    userRole = "<h2>Technical Writer</h2>";
+  else if (variables.role == null) userRole = "<h2>Puesto</h2>";
+  // Country & City
+  if (variables.country == null) variables.country = "Pais";
+  else if (variables.country == "Germany") variables.country = "Germany";
+  else if (variables.country == "USA") variables.country = "USA";
+  else if (variables.country == "Canada") variables.country = "Canada";
+  else if (variables.country == "Venezuela") variables.country = "Venezuela";
+  else if (variables.country == "Spain") variables.country = "Spain";
+  if (variables.city == null) variables.city = "Ciudad";
+  else if (variables.city == "Miami") variables.city = "Miami";
+  else if (variables.city == "Munich") variables.city = "Munich";
+  else if (variables.city == "Caracas") variables.city = "Caracas";
+  else if (variables.city == "Toronto") variables.city = "Toronto";
+  else if (variables.city == "Madrid") variables.city = "Madrid";
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
-          <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <img src="${variables.avatarURL}" class="photo" />
+            <h1>${variables.name} ${variables.lastname}</h1>
+            <h2>${variables.role}</h2>
+            <h3>${variables.city}, ${variables.country}</h3>
+            <ul class=${variables.socialMediaPosition}>
+            <li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/${variables.linkedin}"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${variables.instagram}"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -54,19 +87,21 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://www.somosxbox.com/wp-content/uploads/2020/01/Notas-oficiales-de-la-d%C3%A9cima-actualizaci%C3%B3n-de-FIFA-20.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://i.pinimg.com/736x/01/bc/79/01bc793d4ff3b738e92535919ad3eab3.jpg",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
-    linkedin: null,
-    instagram: null,
+    github: "INVIiICTUS",
+    linkedin: "j-enrique-arés-lorenzo-6a636a148",
+    instagram: "j3alor89",
     name: null,
     lastname: null,
-    role: null,
+    role: "puesto",
     country: null,
     city: null
   };

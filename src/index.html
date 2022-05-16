@@ -6,15 +6,25 @@
     <title>Hello Rigo with Vanilla.js</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../style/index.css"" />
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+    <script
+      src="https://kit.fontawesome.com/71bf80351b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <ul class="filters">
+    <style>
+      body {
+        background-color: aqua;
+      }
+    </style>
+    <ul class="filters" style="background-color: yellow;">
       <li>
         <label>Include Cover</label>
         <select class="picker" for="includeCover">
@@ -57,7 +67,7 @@
       <li>
         <label>Role</label>
         <select class="picker" for="role">
-          <option value="">null</option>
+          <option value="">Puesto</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
           <option value="Technical Writter">Technical Writter</option>
@@ -66,21 +76,23 @@
       <li>
         <label>City</label>
         <select class="picker" for="city">
-          <option value="">null</option>
+          <option value="">Ciudad</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Caracas">Caracas</option>
           <option value="Toronto">Toronto</option>
+          <option value="Madrid">Madrid</option>
         </select>
       </li>
       <li>
         <label>Country</label>
         <select class="picker" for="country">
-          <option value="">null</option>
+          <option value="">Pais</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
           <option value="Canada">Canada</option>
           <option value="Venezuela">Venezuela</option>
+          <option value="Spain">Spain</option>
         </select>
       </li>
     </ul>
