@@ -1,5 +1,5 @@
 body {
-  background-color: greenyellow;
+  background-color: rgb(200, 250, 126);
 }
 .filters {
   background: white;
@@ -26,7 +26,7 @@ body {
   width: 300px;
   height: 350px;
   margin: 50px auto;
-  background: #fff;
+  background: rgb(247, 129, 129);
   border-radius: 5px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
@@ -59,12 +59,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #999;
+  color: rgb(252, 252, 253);
 }
 .widget h1 {
   margin: 60px 0 20px;
   font-size: 26px;
-  color: #000;
+  color: rgb(5, 5, 5);
 }
 .widget h3 {
   font-size: 12px;
@@ -73,7 +73,7 @@ body {
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #2cdfd3;
+  background: #72e3f7;
 }
 .widget ul.position-left {
   left: -26px;
@@ -90,11 +90,11 @@ body {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
+  border-bottom: 1px solid #a3f58f;
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background-color: #93e597;
 }
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
