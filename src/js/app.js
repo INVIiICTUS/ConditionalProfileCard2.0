@@ -50,9 +50,9 @@ function render(variables = {}) {
   else if (variables.role == null) userRole = "<h2>Puesto</h2>";
   // Country & City
   if (variables.country == null) variables.country = "Pais";
-  else if (variables.country == "Germany") variables.country = "Germany";
+  else if (variables.country == "France") variables.country = "France";
   else if (variables.country == "USA") variables.country = "USA";
-  else if (variables.country == "Canada") variables.country = "Canada";
+  else if (variables.country == "Portugal") variables.country = "Portugal";
   else if (variables.country == "Venezuela") variables.country = "Venezuela";
   else if (variables.country == "Spain") variables.country = "Spain";
   if (variables.city == null) variables.city = "Ciudad";
@@ -88,10 +88,10 @@ window.onload = function() {
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
     background:
-      "https://www.somosxbox.com/wp-content/uploads/2020/01/Notas-oficiales-de-la-d%C3%A9cima-actualizaci%C3%B3n-de-FIFA-20.jpg",
+      "https://static.brusheezy.com/system/resources/previews/000/001/464/non_2x/lightning-brushes.jpg",
     // this is the url for the profile avatar
     avatarURL:
-      "https://i.pinimg.com/736x/01/bc/79/01bc793d4ff3b738e92535919ad3eab3.jpg",
+      "https://mundotrucos.com/wp-content/uploads/2020/10/fortnite-profile-pic-guaco.jpg",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
