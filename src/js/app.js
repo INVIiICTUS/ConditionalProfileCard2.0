@@ -63,14 +63,11 @@ function render(variables = {}) {
  */
 window.onload = function() {
   window.variables = {
-    // if includeCover is true the algorithm should
     includeCover: true,
-    // this is the url of the image that will used as background for the profile cover
     background:
-      "https://static.brusheezy.com/system/resources/previews/000/001/464/non_2x/lightning-brushes.jpg",
-    // this is the url for the profile avatar
+      "https://www.securitylab.ru/upload/resize_cache/iblock/30c/241_151_2/30c6ba79d59ca2227d9c64f9b0a76e97.jpg",
     avatarURL:
-      "https://mundotrucos.com/wp-content/uploads/2020/10/fortnite-profile-pic-guaco.jpg",
+      "https://i.pinimg.com/280x280_RS/f1/18/3f/f1183f30862eace2b38d561e941d9c7e.jpg",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
