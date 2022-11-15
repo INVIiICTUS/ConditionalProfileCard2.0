@@ -1,26 +1,5 @@
 import "../style/index.css";
 
-/**
- *  EDIT ONLY INSIDE THIS RENDER FUNCTION
- *  This function is called every time the user changes types or changes any input
- * 
-    {
-        includeCover: true, // if includeCover is true the algorithm should
-        background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
-        avatarURL: "https://randomuser.me/api/portraits/women/42.jpg", // this is the url for the profile avatar
-        socialMediaPosition: "left", // social media bar position (left or right)
-        
-        twitter: null, // social media usernames
-        github: null,
-        linkedin: null,
-        instagram: null,
-        name: null,
-        lastname: null,
-        role: null,
-        country: null,
-        city: null
-    }
- */
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
