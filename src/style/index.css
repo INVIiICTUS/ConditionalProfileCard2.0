@@ -1,4 +1,9 @@
 body {
+  background-image: url(https://fondosmil.com/fondo/28485.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: rgb(200, 250, 126);
 }
 
